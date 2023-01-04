@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.head{
+    padding: 1em;
+}
+p{
+    margin: 1.5em;
+}
+.calander-parent{
+    width: 835px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.head h1{
+    color: #00a2e8;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.months{
+    margin: 1em;
+
+}
+.cal-days {
+    margin-bottom: 14rem;
+}
+.months ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.cal-days{
+    display: flex;
+    justify-content: space-around;
+}
+.cal-days div{
+  
+    width: 350px;
+}
+.cal-days ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin: 2em;
+
+}
+.cal-days ul:nth-of-type(6) {
+    justify-content: space-around;
+    width: 8em;
+}
+li.cancel{
+    color: grey;
+    position: relative;
+}
+li.cancel::before {
+    content: "";
+    background-color: grey;
+    width: 3em;
+    height: 1px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    top: 10px;
+    left: -15px;
+}
+li.cancel::after {
+    content: "";
+    background-color: grey;
+    width: 3em;
+    height: 1px;
+    position: absolute;
+    transform: rotateZ(-45deg);
+    top: 10px;
+    left: -15px;
+}
+li span{
+    display: block;
+    margin-top: 8px;
+    margin-left: -6px;
+    margin-bottom: -23px;
+    font-size: 12px;
+}
